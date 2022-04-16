@@ -53,6 +53,13 @@ public class SmallChangeSys {
                     System.out.println("收益入账金额：");
                     money = scanner.nextDouble();
                     // money 值的范围校验 ->> 一会儿再完善
+                    // （这里的思想很重要）找出不正确的金额条件，然后给出提示，就直接 break
+                    // 设立关卡
+                    if (money <= 0) {
+                        System.out.println("收益入账金额须大于0");
+                        break;
+                    }
+
                     balance += money;
                     // 拼接信息到 details
                     date = new Date(); // 获取当前日期
@@ -64,6 +71,12 @@ public class SmallChangeSys {
                     consumeType = scanner.next();
                     System.out.println("消费金额：");
                     money = scanner.nextDouble();
+                    // 找出金额不正确的情况
+                    if (money <= 0 || money > balance) {
+                        System.out.println("消费金额应该在0-" + balance);
+                        break;
+                    }
+
                     balance -= money;
                     date = new Date();
                     details += "\n" + consumeType + "\t\t" + "-" + money +"\t" + sdf.format(date) + "\t" + balance;
