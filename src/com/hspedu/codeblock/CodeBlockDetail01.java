@@ -53,6 +53,8 @@ class DD {
         System.out.println("DD 的静态代码块");
     }
 
+    // 普通代码块，在 new 对象时被调用，而且是每创建一个对象，就调用一次
+    // 可以这样简单的理解，普通代码块是构造器的补充
     {
         System.out.println("DD 的普通(构造)代码块");
     }
