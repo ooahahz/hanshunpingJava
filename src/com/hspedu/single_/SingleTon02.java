@@ -10,7 +10,7 @@ public class SingleTon02 {
         System.out.println(instance);
 
         // 再次调用 getInstance()
-        Cat instance2 =  Cat.getInstance();
+        Cat instance2 = Cat.getInstance();
         System.out.println(instance2);
 
         System.out.println(instance == instance2);
@@ -44,8 +44,6 @@ class Cat {
 
     @Override
     public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                '}';
+        return "Cat{" + "name='" + name + '\'' + '}';
     }
 }
