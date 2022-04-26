@@ -1,4 +1,4 @@
-package com.chapter12.exception_;
+package com.chapter12.exception_.exception_;
 
 /**
  * @author ooah
