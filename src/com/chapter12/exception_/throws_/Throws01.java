@@ -1,7 +1,6 @@
 package com.chapter12.exception_.throws_;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 /**
  * @author ooah
