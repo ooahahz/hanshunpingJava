@@ -19,10 +19,12 @@ public class String01 {
         String name = "Jack";
         name = "tom";
 
-        final char[] value = {'a', 'b', 'c'};
-        value[0] = 'A';
-        char[] v2 = {'t', 'o', 'm'};
+        final char[] value = {'a', 'b', 'c'}; // 使用 final 修饰
+        value[0] = 'A'; // 不是指字符不可修改
+        char[] v2 = {'t', 'o', 'm'}; // 而是只地址不可修改
 //        value = v2; 不可以修改 value 的地址
 
+        String s1 = new String(new char[]{'a', 'b', 'c', '3', 'd'}, 0, 3);
+        System.out.println(s1);
     }
 }
