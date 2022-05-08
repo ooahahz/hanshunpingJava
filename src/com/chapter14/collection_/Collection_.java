@@ -1,7 +1,5 @@
 package com.chapter14.collection_;
 
-import java.util.Collection;
-import java.util.Map;
 
 /**
  * @ClassName Collection_
