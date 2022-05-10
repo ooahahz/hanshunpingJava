@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.Map</OriginalElement>
+  <nodes>
+    <node x="983.0" y="-244.5">java.util.Properties</node>
+    <node x="703.0" y="-304.0">java.util.Hashtable</node>
+    <node x="190.0" y="-304.0">java.util.TreeMap</node>
+    <node x="454.0" y="-304.0">java.util.HashMap</node>
+    <node x="-146.0" y="-244.5">java.util.LinkedHashMap</node>
+    <node x="478.0" y="-371.0">java.util.Map</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.Properties" target="java.util.Hashtable" relationship="GENERALIZATION">
+      <point x="-0.0" y="-18.5" />
+      <point x="1074.5" y="-285.5" />
+      <point x="121.5" y="-0.0" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.util.Map" relationship="REALIZATION">
+      <point x="-0.0" y="-18.5" />
+      <point x="299.5" y="-352.5" />
+      <point x="-85.5" y="-0.0" />
+    </edge>
+    <edge source="java.util.Hashtable" target="java.util.Map" relationship="REALIZATION">
+      <point x="0.0" y="-18.5" />
+      <point x="824.5" y="-314.0" />
+      <point x="563.5" y="-314.0" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.LinkedHashMap" target="java.util.HashMap" relationship="GENERALIZATION">
+      <point x="145.5" y="-0.0" />
+      <point x="563.5" y="-226.0" />
+      <point x="-0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.LinkedHashMap" target="java.util.Map" relationship="REALIZATION">
+      <point x="-0.0" y="-18.5" />
+      <point x="-0.5" y="-367.5" />
+      <point x="-85.5" y="-15.0" />
+    </edge>
+    <edge source="java.util.HashMap" target="java.util.Map" relationship="REALIZATION">
+      <point x="0.0" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.737994192539647" showDependencies="false" x="-560.7941888619855" y="-412.4966707021792" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
