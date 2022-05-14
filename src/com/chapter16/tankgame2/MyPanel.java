@@ -44,9 +44,8 @@ public class MyPanel extends JPanel implements KeyListener {
         drawTank(hero.getX(), hero.getY(), g, hero.getDirection(), 1);
 
         // 画出敌人的坦克，遍历Vector
-        for (int i = 0; i < enemyTanks.size(); i++) {
-            EnemyTank enemyTank = enemyTanks.get(i);
-            drawTank(enemyTank.getX(), enemyTank.getY(), g,enemyTank.getDirection() , 0);
+        for (EnemyTank enemyTank : enemyTanks) {
+            drawTank(enemyTank.getX(), enemyTank.getY(), g, enemyTank.getDirection(), 0);
         }
 
     }
