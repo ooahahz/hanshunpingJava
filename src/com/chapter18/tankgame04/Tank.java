@@ -14,6 +14,7 @@ public class Tank {
     private int direction; // 坦克方向 0，1，2，3
 
     private int speed = 1;
+    boolean isLive = true;
 
     // 上 右 下 左 移动
     public void moveUp() {
