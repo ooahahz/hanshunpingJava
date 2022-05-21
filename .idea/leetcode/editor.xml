@@ -25,6 +25,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../IdeaLeetcode/leetcode/editor/cn/[961]在长度 2N 的数组中找出重复 N 次的元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../IdeaLeetcode/leetcode/editor/cn/doc/content/[961]在长度 2N 的数组中找出重复 N 次的元素.md" />
+              <option name="frontendQuestionId" value="leetcode.cn961" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../IdeaLeetcode/leetcode/editor/cn/[961]在长度 2N 的数组中找出重复 N 次的元素.java" />
+              <option name="titleSlug" value="n-repeated-element-in-size-2n-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../IdeaLeetcode/leetcode/editor/cn/[剑指 Offer 03]数组中重复的数字.java">
           <value>
             <LeetcodeEditor>
