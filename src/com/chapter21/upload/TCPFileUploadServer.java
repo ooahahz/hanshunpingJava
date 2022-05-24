@@ -1,8 +1,6 @@
 package com.chapter21.upload;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -33,7 +31,15 @@ public class TCPFileUploadServer {
         bufferedOutputStream.write(bytes);
         bufferedOutputStream.close();
 
+        // 向客户端回复“收到图片”
+        // 通过 socket 获取到输出流（字符）
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+        bufferedWriter.write("收到图片");
+        bufferedWriter.flush(); // 把内容刷新到数据通道
+        socket.shutdownOutput(); // 设置写入结束标记
+
         // 关闭其他资源
+        bufferedWriter.close();
         bufferedInputStream.close();
         socket.close();
         serverSocket.close();

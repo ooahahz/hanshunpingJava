@@ -34,7 +34,15 @@ public class TCPFileUploadClient {
         socket.shutdownOutput();
 
 
+        // ====接收从服务端回复回来的消息
+        InputStream inputStream = socket.getInputStream();
+        // 使用 StreamUtils 工具类里面的方法，直接将 InputStream 读取到的内容转成字符串
+        String s = StreamUtils.streamToString(inputStream);
+        System.out.println(s);
+
+
         // 关闭相关流
+        inputStream.close();
         bufferedOutputStream.close();
         socket.close();
     }
